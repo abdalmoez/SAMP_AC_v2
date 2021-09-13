@@ -17,7 +17,7 @@ RUN apt-get install build-essential git g++-4.4 wget -y
 RUN git clone https://github.com/Whitetigerswt/SAMP_AC_v2.git
 
 # Install Boost dependencies
-RUN wget https://dl.bintray.com/boostorg/release/1.68.0/source/boost_1_68_0.tar.bz2
+RUN wget https://boostorg.jfrog.io/artifactory/main/release/1.68.0/source/boost_1_68_0.tar.bz2 
 RUN tar --bzip2 -xf ./boost_1_68_0.tar.bz2
 RUN cd boost_1_68_0 && ./bootstrap.sh && ./b2
 
